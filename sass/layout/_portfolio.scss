@@ -1,0 +1,16 @@
+.portfolio {
+  @extend %section;
+}
+.portfolio__container {
+  @extend %container;
+}
+.portfolio__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,52 @@
+.hero__title {
+  max-width: 696px;
+  height: 120px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  @include fonts(44px, 1.36, 0.06em, 900);
+
+  text-transform: uppercase;
+  color: var(--white);
+}
+.specificity__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.portfolio__title,
+.specificity__title--hidden {
+  @extend %hidden;
+}
+.to-do__title,
+.team__title,
+.clients__title {
+  @extend %view-title;
+}
+.join__title,
+.subscribe__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.product__title {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+.modal__title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
