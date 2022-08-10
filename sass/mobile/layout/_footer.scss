@@ -1,0 +1,27 @@
+.footer {
+  @extend %section;
+  background-color: var(--primary-backgr-cl);
+}
+.footer__container {
+  @extend %container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__contacts {
+  text-align: center;
+}
+.footer__logo {
+  margin-bottom: 20px;
+  font-family: var(--secondaty-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.03em;
+
+  color: var(--accent-cl);
+}
+.footer__part {
+  color: var(--white);
+}

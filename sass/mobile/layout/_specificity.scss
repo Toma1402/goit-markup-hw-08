@@ -1,0 +1,21 @@
+.specificity {
+  @extend %section;
+}
+.specificity__container {
+  @extend %container;
+}
+.specificity__item {
+  text-align: center;
+}
+
+.specificity__text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.specificity__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

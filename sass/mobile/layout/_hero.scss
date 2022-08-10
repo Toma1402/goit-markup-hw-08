@@ -1,0 +1,16 @@
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hw08/hero2x.jpg);
+  background-size: cover;
+}
+.hero__container {
+  @extend %container;
+}

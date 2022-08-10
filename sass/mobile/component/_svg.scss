@@ -1,0 +1,70 @@
+.specificity__space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  height: 120px;
+  background-color: var(--secondary-backgr-cl);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.team__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.team__badge {
+  fill: var(--client-color);
+  transition: fill var(--cubic);
+}
+.team__network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+  }
+}
+.team__network-link:hover .team__badge,
+.team__network-link:focus .team__badge {
+  fill: var(--white);
+}
+.clients__icon {
+  display: block;
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
+}
+.join__badge {
+  fill: var(--client-color);
+  transition: fill var(--cubic);
+}
+.join__badge--fill {
+  fill: var(--white);
+}
+
+.join__network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+  }
+}
+.join__network-link--background {
+  background-color: var(--social-f-col);
+  transition: background-color var(--cubic);
+}

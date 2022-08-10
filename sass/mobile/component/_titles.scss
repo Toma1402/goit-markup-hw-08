@@ -1,0 +1,60 @@
+.hero__title {
+  max-width: 360px;
+  height: 84px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: calc(42 / 26);
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+  color: var(--white);
+}
+.specificity__title--hidden {
+  @extend %hidden;
+}
+.specificity__title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.team__title {
+  margin-bottom: 30px;
+
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients__title {
+  margin-bottom: 30px;
+
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.join__title,
+.subscribe__title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.modal__title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
