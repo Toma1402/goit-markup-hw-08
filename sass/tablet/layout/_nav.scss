@@ -1,10 +1,11 @@
-@media screen and(min-width: 796px) {
+@media screen and(min-width: 768px) {
   .navigation {
     display: block;
   }
 
   .navigation__list {
     display: flex;
+    margin-left: 87px;
   }
 
   .navigation__item {

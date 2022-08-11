@@ -1,0 +1,17 @@
+@media screen and(min-width: 768px) {
+  .footer__container {
+    @include width(768px);
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 89px;
+    padding-right: 89px;
+    row-gap: 60px;
+    align-items: flex-start;
+  }
+  .footer__contacts {
+    margin-right: auto;
+  }
+  .join {
+    margin: 0;
+  }
+}

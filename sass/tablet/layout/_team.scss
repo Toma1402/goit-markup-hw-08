@@ -1,0 +1,16 @@
+@media screen and(min-width: 768px) {
+  .team__container {
+    @include width(768px);
+  }
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team__item {
+    width: 354px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

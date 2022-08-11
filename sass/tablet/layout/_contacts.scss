@@ -1,5 +1,18 @@
-@media screen and(min-width: 796px) {
+@media screen and(min-width: 768px) {
   .head-contact {
-    display: block;
+    display: inline-block;
+    margin-left: auto;
+  }
+  .head-contact__mail,
+  .head-contact__phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    transition: color var(--cubic);
+  }
+  .head-contact__item:first-child {
+    margin-bottom: 10px;
   }
 }

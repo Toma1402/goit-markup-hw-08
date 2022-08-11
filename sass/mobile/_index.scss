@@ -1,9 +1,13 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
 @import './base/base';
 @import './base/reset';
-@import './component/svg';
-@import './component/forms';
 @import './component/container';
 @import './component/section';
+@import './component/svg';
+@import './component/forms';
+
 @import './component/buttons';
 @import './component/menu';
 
@@ -11,9 +15,7 @@
 @import './component/modal';
 @import './component/address';
 @import './component/overlay-portfolio';
-@import './utils/appearance';
-@import './utils/variables';
-@import './utils/visually-hidden';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/team';

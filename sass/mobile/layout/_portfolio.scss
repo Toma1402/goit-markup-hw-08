@@ -3,6 +3,7 @@
 }
 .portfolio__container {
   @extend %container;
+  @include width(480px);
 }
 .portfolio__list {
   display: flex;

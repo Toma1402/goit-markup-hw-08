@@ -4,6 +4,7 @@
 }
 .team__container {
   @extend %container;
+  @include width(480px);
 }
 .team__person {
   margin-bottom: 10px;
