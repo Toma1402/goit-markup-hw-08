@@ -1,0 +1,17 @@
+@media screen and(min-width: 1200px) {
+  .head-contact {
+    flex-direction: row;
+  }
+  .head-contact__item {
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+  .head-contact__mail,
+  .head-contact__phone {
+    align-items: center;
+  }
+  .head-contact__mail {
+    margin-right: 30px;
+  }
+}

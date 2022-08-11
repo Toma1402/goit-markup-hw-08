@@ -1,16 +1,24 @@
 @media screen and(min-width: 768px) {
   .head-contact {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     margin-left: auto;
+    transition: color var(--cubic);
   }
   .head-contact__mail,
   .head-contact__phone {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     transition: color var(--cubic);
+    &:hover,
+    &:focus {
+      color: var(--accent-cl);
+    }
   }
   .head-contact__item:first-child {
     margin-bottom: 10px;

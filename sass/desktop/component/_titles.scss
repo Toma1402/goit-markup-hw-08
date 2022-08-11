@@ -1,0 +1,16 @@
+@media screen and(min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
+  .to-do__title,
+  .team__title,
+  .clients__title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
+  .to-do__title {
+    text-align: center;
+  }
+}
