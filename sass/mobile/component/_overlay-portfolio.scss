@@ -1,0 +1,28 @@
+.product__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.product__overlay {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--cubic);
+}
+.product__text {
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 63px 24px;
+  letter-spacing: 0.03em;
+  color: var(--white);
+}
+.product__link:hover .product__overlay {
+  transform: translateY(0);
+}

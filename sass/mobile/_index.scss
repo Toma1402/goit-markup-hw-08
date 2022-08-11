@@ -1,13 +1,16 @@
 @import './base/base';
 @import './base/reset';
+@import './component/svg';
+@import './component/forms';
 @import './component/container';
 @import './component/section';
 @import './component/buttons';
 @import './component/menu';
-@import './component/svg';
+
 @import './component/titles';
 @import './component/modal';
 @import './component/address';
+@import './component/overlay-portfolio';
 @import './utils/appearance';
 @import './utils/variables';
 @import './utils/visually-hidden';
@@ -19,4 +22,5 @@
 @import './layout/specificity';
 @import './layout/footer';
 @import './layout/join';
-@import './component/forms';
+@import './layout/portfolio';
+@import './layout/product';

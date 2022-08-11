@@ -68,3 +68,17 @@
   background-color: var(--social-f-col);
   transition: background-color var(--cubic);
 }
+.modal__icon-close {
+  background-color: var(--white);
+}
+.modal__symbol {
+  position: absolute;
+  top: 0;
+  left: 9px;
+}
+.modal__icon {
+  position: absolute;
+  top: 28px;
+  left: 12px;
+  transition: border-color var(--cubic), fill var(--cubic);
+}

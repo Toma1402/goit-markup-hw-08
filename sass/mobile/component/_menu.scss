@@ -35,6 +35,9 @@
     color: var(--accent-cl);
   }
 }
+.nav__link--curr {
+  color: var(--accent-cl);
+}
 .contacts {
   display: flex;
   flex-direction: column-reverse;

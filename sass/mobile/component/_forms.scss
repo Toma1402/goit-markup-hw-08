@@ -38,8 +38,8 @@
 }
 .modal__policy {
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
@@ -109,4 +109,8 @@
   border-color: var(--accent-cl);
   fill: var(--accent-cl);
   outline: var(--accent-cl);
+}
+.modal__link {
+  color: var(--accent-cl);
+  text-decoration: underline;
 }
