@@ -1,8 +1,8 @@
 .product__description {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 14px;
+  padding-right: 14px;
   border: 1px solid var(--border-portfolio);
   border-top: none;
 }
@@ -12,8 +12,12 @@
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 .product__link {
-  display: block;
   transition: box-shadow var(--cubic);
   &:hover,
   &:focus {
@@ -22,7 +26,5 @@
   }
 }
 .product__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  flex-basis: calc((100% - (var(--indent)) * var(--items) - 1) / (var(--items)));
 }

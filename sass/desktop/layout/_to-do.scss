@@ -1,8 +1,7 @@
 @media screen and(min-width: 1200px) {
   .to-do {
     display: block;
-    padding-top: 0;
-    @include padd(94px);
+    padding-bottom: 94px;
   }
   .to-do__container {
     @include width(1200px);

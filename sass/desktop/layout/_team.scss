@@ -1,0 +1,11 @@
+@media screen and(min-width: 1200px) {
+  .team {
+    @include padd(94px);
+  }
+  .team__item {
+    width: 270px;
+  }
+  .team__container {
+    @include width(1200px);
+  }
+}

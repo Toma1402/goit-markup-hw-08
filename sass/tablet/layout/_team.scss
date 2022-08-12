@@ -3,14 +3,11 @@
     @include width(768px);
   }
   .team__list {
-    display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 30px;
   }
   .team__item {
     width: 354px;
-    &:not(:last-child) {
-      margin-bottom: 0;
-    }
   }
 }

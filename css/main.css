@@ -15,6 +15,8 @@
   --main-font: "Roboto", sans-serif;
   --secondaty-font: "Raleway", sans-serif;
   --cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --indent: 30px;
+  --items: 1;
 }
 
 .specificity__title--hidden,
@@ -61,6 +63,12 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .portfolio__container, .footer__container, .specificity__container, .clients__container, .team__container, .hero__container, .header__container {
@@ -629,6 +637,7 @@ img {
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .team__title,
@@ -871,8 +880,16 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--indent);
 }
 
 .to-do {
@@ -889,15 +906,13 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: -30px;
-  margin-right: -30px;
+  gap: var(--indent);
 }
 
 .clients__item {
-  -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  --items: 2;
+  -ms-flex-preferred-size: calc((100% - (var(--indent)) * var(--items) - 1) / (var(--items)));
+      flex-basis: calc((100% - (var(--indent)) * var(--items) - 1) / (var(--items)));
 }
 
 .clients__link {
@@ -911,6 +926,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 92px;
+  width: 210px;
   border: 1px solid var(--client-color);
   border-radius: 4px;
   color: var(--client-color);
@@ -926,14 +942,19 @@ img {
   max-width: 480px;
 }
 
-.specificity__item {
-  text-align: center;
-}
-.specificity__item:not(:last-child) {
-  margin-bottom: 30px;
+.specificity__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--indent);
 }
 
 .specificity__text {
+  padding: 5px;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
@@ -1012,8 +1033,8 @@ img {
 .product__description {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 14px;
+  padding-right: 14px;
   border: 1px solid var(--border-portfolio);
   border-top: none;
 }
@@ -1025,8 +1046,18 @@ img {
   color: var(--secondary-text-color);
 }
 
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
 .product__link {
-  display: block;
   -webkit-transition: -webkit-box-shadow var(--cubic);
   transition: -webkit-box-shadow var(--cubic);
   transition: box-shadow var(--cubic);
@@ -1037,8 +1068,9 @@ img {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product__item:not(:last-child) {
-  margin-bottom: 30px;
+.product__item {
+  -ms-flex-preferred-size: calc((100% - (var(--indent)) * var(--items) - 1) / (var(--items)));
+      flex-basis: calc((100% - (var(--indent)) * var(--items) - 1) / (var(--items)));
 }
 
 @media screen and (min-width: 768px) {
@@ -1152,23 +1184,24 @@ img {
   .specificity__container {
     max-width: 768px;
   }
-  .specificity__item {
-    text-align: start;
-    width: 354px;
-  }
-  .specificity__item:not(:last-child) {
-    margin: 0;
-  }
   .specificity__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
-    row-gap: 57px;
+    gap: var(--indent);
+  }
+  .specificity__item {
+    text-align: start;
+    width: 354px;
+    --items: 2;
+    -ms-flex-preferred-size: calc((100% - (var(--indent)) * var(--items) - 1) / (var(--items)));
+        flex-basis: calc((100% - (var(--indent)) * var(--items) - 1) / (var(--items)));
   }
 }
 @media screen and (min-width: 768px) {
@@ -1176,28 +1209,24 @@ img {
     max-width: 768px;
   }
   .team__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 30px;
   }
   .team__item {
     width: 354px;
-  }
-  .team__item:not(:last-child) {
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .clients__container {
     max-width: 768px;
   }
-  .clients__item {
-    -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-        flex-basis: calc(33.3333333333% - 30px);
-    gap: 30px;
+  .clients__link {
+    width: 226px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1244,11 +1273,14 @@ img {
         flex-wrap: wrap;
     gap: 30px;
   }
-  .product__item {
-    width: 354px;
+  .product {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .product__description--padd {
-    padding-bottom: 56px;
+  .product__item {
+    --items: 2;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1308,8 +1340,6 @@ img {
 @media screen and (min-width: 1200px) {
   .to-do {
     display: block;
-    padding-top: 0;
-    padding-top: 94px;
     padding-bottom: 94px;
   }
   .to-do__container {
@@ -1335,5 +1365,17 @@ img {
   }
   .specificity__item {
     width: 270px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team__item {
+    width: 270px;
+  }
+  .team__container {
+    max-width: 1200px;
   }
 }/*# sourceMappingURL=main.css.map */

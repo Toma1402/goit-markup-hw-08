@@ -4,12 +4,10 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-  .product__item {
-    width: 354px;
+  .product {
+    flex-direction: row;
   }
-  .product__description {
-    &--padd {
-      padding-bottom: 56px;
-    }
+  .product__item {
+    --items: 2;
   }
 }

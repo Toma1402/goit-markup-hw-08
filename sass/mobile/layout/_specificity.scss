@@ -5,14 +5,14 @@
   @extend %container;
   @include width(480px);
 }
-.specificity__item {
-  text-align: center;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.specificity__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--indent);
 }
 
 .specificity__text {
+  padding: 5px;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
