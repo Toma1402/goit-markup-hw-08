@@ -1,0 +1,11 @@
+@media screen and(min-width: 1200px) {
+  .portfolio {
+    @include padd(94px);
+  }
+  .portfolio__container {
+    @include width(1200px);
+  }
+  .portfolio__list {
+    margin-bottom: 50px;
+  }
+}

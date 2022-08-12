@@ -9,8 +9,38 @@
   .clients__title {
     font-size: 36px;
     line-height: calc(42 / 36);
+    margin-bottom: 50px;
   }
+
   .to-do__title {
     text-align: center;
+  }
+  .to-do__img {
+    position: relative;
+  }
+  .to-do__text {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  .join__title,
+  .subscribe__title {
+    text-align: start;
+  }
+  .modal__title {
+    line-height: calc(23 / 20);
   }
 }
