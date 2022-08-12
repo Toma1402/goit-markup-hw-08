@@ -2,4 +2,7 @@
   .header__container {
     @include width(1200px);
   }
+  .header__logo {
+    font-size: 26px;
+  }
 }
