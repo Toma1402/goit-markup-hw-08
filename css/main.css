@@ -388,7 +388,7 @@ img {
 }
 
 .menu__button {
-  margin: 10px 15px 0 auto;
+  margin-left: auto;
 }
 
 /*HERO button*/
@@ -529,7 +529,7 @@ img {
   padding-left: 40px;
   padding-right: 15px;
   padding-bottom: 48px;
-  padding-top: 15px;
+  padding-top: 10px;
   background-color: var(--white);
 }
 .menu.is-open {
