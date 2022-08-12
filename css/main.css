@@ -574,7 +574,7 @@ img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  margin-bottom: 64px;
+  margin-bottom: auto;
 }
 .contacts__icon {
   display: none;

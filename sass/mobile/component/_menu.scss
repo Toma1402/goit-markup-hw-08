@@ -42,7 +42,7 @@
 .contacts {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 64px;
+  margin-bottom: auto;
   &__icon {
     display: none;
   }
