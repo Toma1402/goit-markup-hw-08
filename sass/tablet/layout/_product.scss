@@ -1,9 +1,23 @@
 @media screen and(min-width: 768px) {
   .product {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .product {
     flex-direction: row;
+    flex-wrap: wrap;
+    &__item {
+      --items: 2;
+    }
+  }
+  @media screen and(max-width:1199px) {
+    .product__item:nth-child(-n + 2) {
+      height: 440px;
+      width: 354px;
+    }
+    .product__link {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      & .product__description {
+        flex-grow: 1;
+      }
+    }
   }
 }
