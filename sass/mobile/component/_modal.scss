@@ -22,6 +22,8 @@
   height: 609px;
   background-color: var(--white);
   transition: transform var(--cubic);
+  @media screen and (max-width: 480px) {
+  }
 }
 .modal .backdrop--hidden {
   transform: translate(-50%, -50%) scale(0.9);

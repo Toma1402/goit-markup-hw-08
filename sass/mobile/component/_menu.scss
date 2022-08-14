@@ -56,6 +56,9 @@
     letter-spacing: 0.02em;
 
     color: var(--accent-cl);
+    @media screen and (max-width: 414px) {
+      font-size: 26px;
+    }
   }
   &__mail {
     font-weight: 500;
@@ -78,6 +81,9 @@
 
   letter-spacing: 0.02em;
   color: var(--accent-cl);
+  @media screen and (max-width: 414px) {
+    font-size: 12px;
+  }
 }
 .account__link {
   display: flex;

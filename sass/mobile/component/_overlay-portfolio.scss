@@ -22,6 +22,10 @@
   padding: 63px 24px;
   letter-spacing: 0.03em;
   color: var(--white);
+  @media screen and (max-width: 414px) {
+    padding: 15px;
+    font-size: 15px;
+  }
 }
 .product__link:hover .product__overlay {
   transform: translateY(0);

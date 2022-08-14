@@ -6,6 +6,9 @@
       --items: 2;
     }
   }
+  .product__text {
+    padding-top: 49px;
+  }
   @media screen and(max-width:1199px) {
     .product__item:nth-child(-n + 2) {
       height: 440px;
