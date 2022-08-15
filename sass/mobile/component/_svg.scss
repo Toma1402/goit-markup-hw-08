@@ -1,3 +1,11 @@
+@media screen and (max-width: 479px) {
+  .modal__symbol {
+    outline: 1px solid red;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+  }
+}
 .specificity__space {
   display: flex;
   justify-content: center;
@@ -71,10 +79,13 @@
 .modal__icon-close {
   background-color: var(--white);
 }
-.modal__symbol {
-  position: absolute;
-  top: 0;
-  left: 9px;
+@media screen and (min-width: 480px) {
+  .modal__symbol {
+    outline: 1px solid red;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+  }
 }
 .modal__icon {
   position: absolute;
