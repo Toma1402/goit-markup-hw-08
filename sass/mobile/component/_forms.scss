@@ -120,3 +120,9 @@
   color: var(--accent-cl);
   text-decoration: underline;
 }
+@media screen and (max-width: 479px) {
+  .modal__input {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

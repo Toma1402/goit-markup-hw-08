@@ -78,7 +78,7 @@
 }
 .modal__icon {
   position: absolute;
-  top: 28px;
-  left: 12px;
+  top: 50%;
+  left: 4%;
   transition: border-color var(--cubic), fill var(--cubic);
 }
